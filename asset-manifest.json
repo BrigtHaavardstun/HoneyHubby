@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/HoneyHubby/static/css/main.a8bc85e7.css",
-    "main.js": "/HoneyHubby/static/js/main.2372b44c.js",
+    "main.js": "/HoneyHubby/static/js/main.1fe236aa.js",
     "static/js/453.d7dd08d2.chunk.js": "/HoneyHubby/static/js/453.d7dd08d2.chunk.js",
     "index.html": "/HoneyHubby/index.html",
     "main.a8bc85e7.css.map": "/HoneyHubby/static/css/main.a8bc85e7.css.map",
-    "main.2372b44c.js.map": "/HoneyHubby/static/js/main.2372b44c.js.map",
+    "main.1fe236aa.js.map": "/HoneyHubby/static/js/main.1fe236aa.js.map",
     "453.d7dd08d2.chunk.js.map": "/HoneyHubby/static/js/453.d7dd08d2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8bc85e7.css",
-    "static/js/main.2372b44c.js"
+    "static/js/main.1fe236aa.js"
   ]
 }
