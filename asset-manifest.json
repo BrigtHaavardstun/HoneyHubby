@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BrigtHaavardstun.github.io/static/css/main.a8bc85e7.css",
-    "main.js": "/BrigtHaavardstun.github.io/static/js/main.e94da217.js",
-    "static/js/453.d7dd08d2.chunk.js": "/BrigtHaavardstun.github.io/static/js/453.d7dd08d2.chunk.js",
-    "index.html": "/BrigtHaavardstun.github.io/index.html",
-    "main.a8bc85e7.css.map": "/BrigtHaavardstun.github.io/static/css/main.a8bc85e7.css.map",
-    "main.e94da217.js.map": "/BrigtHaavardstun.github.io/static/js/main.e94da217.js.map",
-    "453.d7dd08d2.chunk.js.map": "/BrigtHaavardstun.github.io/static/js/453.d7dd08d2.chunk.js.map"
+    "main.css": "/HoneyHubby/static/css/main.a8bc85e7.css",
+    "main.js": "/HoneyHubby/static/js/main.bc441312.js",
+    "static/js/453.d7dd08d2.chunk.js": "/HoneyHubby/static/js/453.d7dd08d2.chunk.js",
+    "index.html": "/HoneyHubby/index.html",
+    "main.a8bc85e7.css.map": "/HoneyHubby/static/css/main.a8bc85e7.css.map",
+    "main.bc441312.js.map": "/HoneyHubby/static/js/main.bc441312.js.map",
+    "453.d7dd08d2.chunk.js.map": "/HoneyHubby/static/js/453.d7dd08d2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8bc85e7.css",
-    "static/js/main.e94da217.js"
+    "static/js/main.bc441312.js"
   ]
 }
