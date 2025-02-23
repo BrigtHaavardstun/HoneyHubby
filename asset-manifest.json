@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BrigtHaavardstun.github.io/static/css/main.a8bc85e7.css",
+    "main.js": "/BrigtHaavardstun.github.io/static/js/main.e94da217.js",
+    "static/js/453.d7dd08d2.chunk.js": "/BrigtHaavardstun.github.io/static/js/453.d7dd08d2.chunk.js",
+    "index.html": "/BrigtHaavardstun.github.io/index.html",
+    "main.a8bc85e7.css.map": "/BrigtHaavardstun.github.io/static/css/main.a8bc85e7.css.map",
+    "main.e94da217.js.map": "/BrigtHaavardstun.github.io/static/js/main.e94da217.js.map",
+    "453.d7dd08d2.chunk.js.map": "/BrigtHaavardstun.github.io/static/js/453.d7dd08d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8bc85e7.css",
+    "static/js/main.e94da217.js"
+  ]
+}
