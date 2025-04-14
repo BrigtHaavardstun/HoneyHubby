@@ -5,17 +5,24 @@ interface ImageCarouselProps {
     displayCount?: number;
     tickRate?: number;
     baseUrl?: string;
+    vertical?: boolean;
+    startingIndex?: number;
+    imageWidth?: number;
+    imageHeight?: number;
 }
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({
-                                                         totalImages=13,
+                                                         totalImages = 13,
                                                          displayCount = 10,
                                                          tickRate = 3000,
-                                                         // Use baseUrl prop to handle GitHub Pages subdirectory
                                                          baseUrl = process.env.PUBLIC_URL,
+                                                         vertical = false,
+                                                         startingIndex = 0,
+                                                         imageWidth,
+                                                         imageHeight,
                                                      }) => {
     const [visibleImages, setVisibleImages] = useState<string[]>([]);
-    const [startIndex, setStartIndex] = useState(0);
+    const [startIndex, setStartIndex] = useState(startingIndex);
 
     useEffect(() => {
         if (totalImages < displayCount) {
@@ -25,16 +32,13 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
 
         const updateImages = (index: number) => {
             return Array.from({ length: displayCount }, (_, i) => {
-                const imageIndex = ((index + i) % totalImages) + 1;
-                // Construct the path using baseUrl
+                const imageIndex = ((index + i) % totalImages);
                 return `${baseUrl}/images/image${imageIndex}.jpg`;
             });
         };
 
-        // Initialize the visible images array
-        setVisibleImages(updateImages(0));
+        setVisibleImages(updateImages(startingIndex));
 
-        // Set up the interval to update images
         const interval = setInterval(() => {
             setStartIndex((prevIndex) => {
                 const newIndex = (prevIndex + 1) % totalImages;
@@ -43,18 +47,26 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
             });
         }, tickRate);
 
-        // Clear interval on component unmount
         return () => clearInterval(interval);
-    }, [totalImages, displayCount, tickRate, baseUrl]);
+    }, [totalImages, displayCount, tickRate, baseUrl, startingIndex]);
+
+    const carouselClassName = vertical ? "image-carousel-vertical" : "image-carousel";
+
+    // Custom image style based on props
+    const imageStyle = {
+        width: imageWidth ? `${imageWidth}px` : undefined,
+        height: imageHeight ? `${imageHeight}px` : undefined,
+    };
 
     return (
-        <div className="image-carousel">
+        <div className={carouselClassName}>
             {visibleImages.map((src, index) => (
                 <img
                     key={`${src}-${index}`}
                     src={src}
-                    alt={`Carousel image ${index + 1}`}
+                    alt={`item number ${index + 1}`}
                     className="carousel-image"
+                    style={imageStyle}
                     loading="lazy"
                 />
             ))}
